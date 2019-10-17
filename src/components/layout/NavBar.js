@@ -51,7 +51,7 @@ class NavBar extends Component {
                   </SideNav>
                   </div>:null}
                   </div>
-              <div className="nav-wrapper deep-orange darken-4">
+              <div className="nav-wrapper teal darken-3">
                 <a href="#!" className="brand-logo" style={{left: "74px"}}>Patterns</a>
                 <ul className={!(this.props.auth.isAuthenticated)?"right":"right hide-on-med-and-down"}>
                   {links}
