@@ -28,7 +28,7 @@ class SignIn extends Component{
       }
         return ( 
             <div className=" row " style={{margin:"5% auto", display: "inline-block"}}>
-            <div className="card col">
+            <div className="card col cyan lighten-5">
             <h3 className="card-title" style={{fontWeight: "bold"}}>Nice to see you here!!</h3>
             <div className="card-content">
             <form className="black-text" onSubmit={this.handleSubmit}>
