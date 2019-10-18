@@ -15,7 +15,7 @@ class NavBar extends Component {
     <div className=" hide-on-medium-and-up">
     {(this.props.auth.isAuthenticated)?<div className=" right hide-on-medium-and-up">
                   
-                  <SideNav trigger={<Button flat ><Icon className="white-text">dehaze</Icon></Button>} options={{closeOnClick: false}}>
+                  <SideNav trigger={<Button flat className=" right hide-on-medium-and-up"><Icon className="white-text">dehaze</Icon></Button>} options={{closeOnClick: false}}>
                   <SideNavItem>
                         <NavLink className='black-text' to='/users'>Users</NavLink>
                   </SideNavItem>
