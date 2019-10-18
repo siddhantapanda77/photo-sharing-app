@@ -33,13 +33,11 @@ class NavBar extends Component {
                     All
                     </a>
                     <Divider/>
-                    <a href="#" >
-                    
+                    <a href="#" >                    
                     Science
                     </a>
                     <Divider/>
-                    <a href="#">
-                  
+                    <a href="#">                  
                     Fun
                     </a>
                   </Dropdown>
