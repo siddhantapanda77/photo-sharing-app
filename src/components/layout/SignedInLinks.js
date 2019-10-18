@@ -24,10 +24,10 @@ class SignedInLinks extends Component{
                 </a>
             </Dropdown>
             </li>
-            <li><NavLink to='/signin' onClick={()=> {this.props.logout()}}>Logout</NavLink></l>
             <li ><NavLink to='/users'>Users</NavLink></li>
             <li ><NavLink to='/'>Photos</NavLink></li>
-            <li ><NavLink to='/addphoto'>Add Photo</NavLink></li>           
+            <li ><NavLink to='/addphoto'>Add Photo</NavLink></li> 
+            <li><NavLink to='/signin' onClick={()=> {this.props.logout()}}>Logout</NavLink></l>
           </ul>
     )
  }
