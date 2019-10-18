@@ -15,26 +15,19 @@ class SignedInLinks extends Component{
                 All
                 </a>
                 <Divider/>
-                <a href="#" >
-                
+                <a href="#" >                
                 Science
                 </a>
                 <Divider/>
-                <a href="#">
-               
+                <a href="#">               
                 Fun
                 </a>
             </Dropdown>
             </li>
-            <SideNavItem divider/> 
-            <li><NavLink to='/signin' onClick={()=> {this.props.logout()}}>Logout</NavLink></li>
-            <SideNavItem divider/> 
+            <li><NavLink to='/signin' onClick={()=> {this.props.logout()}}>Logout</NavLink></l>
             <li ><NavLink to='/users'>Users</NavLink></li>
-            <SideNavItem divider/> 
             <li ><NavLink to='/'>Photos</NavLink></li>
-            <SideNavItem divider/> 
-            <li ><NavLink to='/addphoto'>Add Photo</NavLink></li>
-            
+            <li ><NavLink to='/addphoto'>Add Photo</NavLink></li>           
           </ul>
     )
  }
