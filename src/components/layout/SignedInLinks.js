@@ -27,7 +27,7 @@ class SignedInLinks extends Component{
             <li ><NavLink to='/users'>Users</NavLink></li>
             <li ><NavLink to='/'>Photos</NavLink></li>
             <li ><NavLink to='/addphoto'>Add Photo</NavLink></li> 
-            <li><NavLink to='/signin' onClick={()=> {this.props.logout()}}>Logout</NavLink></l>
+            <li><NavLink to='/signin' onClick={()=> {this.props.logout()}}>Logout</NavLink></li>
           </ul>
     )
  }
