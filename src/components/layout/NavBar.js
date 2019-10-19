@@ -4,7 +4,7 @@ import SignedInLinks from './SignedInLinks'
 import SignedOutLinks from './SignedOutLinks'
 import {NavLink} from 'react-router-dom'
 import { SideNav, SideNavItem,Divider, Dropdown, Button, Icon} from 'react-materialize'
-
+import {logout} from '../../store/actions/authAction'
 
 class NavBar extends Component {
     render(){
