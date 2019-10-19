@@ -68,7 +68,14 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(NavBar);
+const mapDispatchToProps = (dispatch) => {
+    return{
+        logout: () => dispatch(logout())
+    }
+}
+
+
+export default connect(mapStateToProps,mapDispatchToProps )(NavBar);
 
 
 
