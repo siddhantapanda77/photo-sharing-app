@@ -7,6 +7,15 @@ import { SideNav, SideNavItem,Divider, Dropdown, Button, Icon} from 'react-mater
 import {logout} from '../../store/actions/authAction'
 
 class NavBar extends Component {
+    constructor(props){
+        super(props);
+        this.handleClick = this.handleClick.bind(this);
+    }
+    handleClick = () =>{
+        this.props.logout();
+        //this.props.history.push("/signin")
+    }
+
     render(){
      const links = (this.props.auth.isAuthenticated)?<li><SignedInLinks/></li>:<li><SignedOutLinks/></li> 
       return(
@@ -44,7 +53,7 @@ class NavBar extends Component {
                   </SideNavItem>
                   <SideNavItem divider/>
                   <SideNavItem>
-                        <NavLink className='black-text' to='/signin' onClick={()=> {this.props.logout()}}>Logout</NavLink>   
+                        <NavLink className='black-text' to='/signin' onClick={this.handleClick}>Logout</NavLink>   
                   </SideNavItem>
                   </SideNav>
                   </div>:null}
